@@ -83,17 +83,24 @@ def main():
     github_df = pd.DataFrame(github_data)
 
     fig_line = px.line(github_df, x="Year", y="Contributions", title="GitHub Contributions Over Time")
-    st.plotly_chart(fig_line)
+    st.plotly_chart(fig_line)  
 
-    # Skills
+    # Add the Skills animation under the "Skills" section
     st.header("Skills")
+    animation_url1 = "https://lottie.host/81923711-4d08-4098-9c30-4df1491579ac/bDnigl2A7X.json"
+    st_lottie(animation_url1, speed=1, height=300, key="lottie_animation_skills")
+    
     st.write("Programming Languages: Python, JavaScript")
     st.write("Cloud Computing: AWS")
     st.write("Databases: MySQL, MongoDB")
     st.write("Version Control: Git")
 
-    # Projects
+    
+    # Add the Project animation under the "Skills" section
     st.header("Projects")
+    animation_url = "https://lottie.host/c69a85a4-cc7e-472d-921b-851566ade1d4/EySROHiYry.json"
+    st_lottie(animation_url, speed=1, height=300, key="lottie_animation_projects")
+
     st.subheader("E-commerce Website")
     st.write("Developed a full-stack e-commerce website using React and Node.js.")
     st.write("Implemented payment processing and user authentication.")
