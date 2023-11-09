@@ -1,6 +1,8 @@
 ﻿import streamlit as st
 from PIL import Image
 import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use('Agg')  # Set the Matplotlib backend to 'Agg' to work with Streamlit
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 import plotly.express as px
@@ -34,7 +36,7 @@ st.markdown(
 def main():
     # Header with Photo
     st.title("Joseph Mugare Portfolio")
-    st.subheader("Fullstack Developer")
+    st.subheader("Data Analyst/Fullstack Developer")
 
     # Add Lottie animation from the provided URL
     animation_url = "https://lottie.host/e8dbe450-ca62-4516-8646-b646e8bef5a1/rTmqdL4mNv.json"
@@ -52,12 +54,12 @@ def main():
 
     # Summary or Objective Section
     st.header("Summary")
-    st.write("Experienced Fullstack Developer with a passion for creating innovative web applications. Skilled in Python, JavaScript, and cloud computing. Committed to delivering high-quality solutions to meet business needs.")
+    st.write("Experienced Data Analyst/Fullstack Developer with a passion for creating innovative web applications. Skilled in Python, JavaScript, and cloud computing. Committed to delivering high-quality solutions to meet business needs.")
 
     # Education
     st.header("Education")
     st.markdown("Bachelor In Information Technology, KCA UNIVERSITY")
-    st.markdown("J A N  2009 - D E C E M B ER  2011")
+    st.markdown("JAN  2009 - DECEMBER  2011")
 
     # Additional Certifications
     st.header("Additional Certifications")
@@ -78,7 +80,7 @@ def main():
     # Create a sample data frame for the line chart (replace this with your actual data)
     github_data = {
         "Year": [2019, 2020, 2021, 2022, 2023],
-        "Contributions": [100, 300, 500, 700, 600]
+        "Contributions": [100, 350, 550, 700, 800]
     }
     github_df = pd.DataFrame(github_data)
 
