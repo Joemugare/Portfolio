@@ -54,7 +54,7 @@ def main():
 
     # Summary or Objective Section
     st.header("Summary")
-    st.write("Experienced Data Analyst/Fullstack Developer with a passion for creating innovative web applications. Skilled in Python, JavaScript, and cloud computing. Committed to delivering high-quality solutions to meet business needs.")
+    st.write("Experienced Data Analyst and Fullstack Developer with a passion for crafting innovative web applications. Proficient in Python, JavaScript, and adept in cloud computing technologies. Committed to delivering high-quality solutions that precisely align with business objectives.")
 
     # Education
     st.header("Education")
@@ -66,21 +66,25 @@ def main():
     st.markdown("1. CCNA, ZETECH")
     st.markdown("2. MYSQL, EDX STANFORD (Feb 2023 - July 2023)")
     st.markdown("3. Python Data Science, EDX HARVARD (January 2023 - June 2023)")
+    st.markdown("4. CS50's Introduction to Computer Science, Harvard University (March 2024)")
+    st.markdown("5. MIT Computer Science and Programming Using Python, Massachusetts Institute of Technology (January 2024)")
+    st.markdown("6. MIT Computational Thinking and Data Science, Massachusetts Institute of Technology (March 2024)")
+
 
     # Work Experience
     st.header("Work Experience")
     st.subheader("Fullstack Developer at BIO HAZARD NBO")
     st.write("Jan 2021 - Present")
-    st.write("Developed and maintained web applications.")
-    st.write("Collaborated with cross-functional teams to deliver projects")
-    
+    st.write("Responsible for designing, developing, and maintaining web applications.")
+    st.write("Collaborated closely with cross-functional teams to ensure seamless project delivery.")
+
     # GitHub Contributions
     st.header("GitHub Contributions (Line Chart)")
 
     # Create a sample data frame for the line chart (replace this with your actual data)
     github_data = {
-        "Year": [2019, 2020, 2021, 2022, 2023],
-        "Contributions": [100, 350, 550, 700, 800]
+        "Year": [2019, 2020, 2021, 2022, 2023,2024],
+        "Contributions": [100, 350, 550, 600, 600,800]
     }
     github_df = pd.DataFrame(github_data)
 
@@ -91,11 +95,13 @@ def main():
     st.header("Skills")
     animation_url1 = "https://lottie.host/81923711-4d08-4098-9c30-4df1491579ac/bDnigl2A7X.json"
     st_lottie(animation_url1, speed=1, height=300, key="lottie_animation_skills")
-    
+
     st.write("Programming Languages: Python, JavaScript")
+    st.write("Machine Learning: Scikit-learn, TensorFlow, Keras")
     st.write("Cloud Computing: AWS")
     st.write("Databases: MySQL, MongoDB")
     st.write("Version Control: Git")
+
 
     
     # Add the Project animation under the "Skills" section
@@ -105,45 +111,64 @@ def main():
 
     st.subheader("E-commerce Website")
     st.write("Developed a full-stack e-commerce website using React and Node.js.")
-    st.write("Implemented payment processing and user authentication.")
+    st.write("Implemented payment processing, user authentication, and product recommendation system.")
+
     st.subheader("Portfolio Website")
     st.write("Created a personal portfolio website using HTML, CSS, and JavaScript.")
-    st.write("Showcased my work and skills through a user-friendly interface.")
+    st.write("Utilized responsive design principles for optimal viewing across devices.")
+    st.write("Implemented dynamic content loading and smooth transitions for improved user experience.")
 
     # Key Achievements
     st.header("Key Achievements")
-    st.markdown("1. Increased website traffic by 30% through SEO optimization.")
-    st.markdown("2. Successfully led a team of developers in delivering a critical project on time.")
-    st.markdown("3. Received the 'Employee of the Month' award in June 2022.")
+    st.markdown("1. Implemented a machine learning-based recommendation system, resulting in a 20% increase in user engagement.")
+    st.markdown("2. Designed and deployed a scalable cloud infrastructure using AWS, reducing operational costs by 15%.")
+    st.markdown("3. Led the development of a data-driven dashboard, providing actionable insights for decision-makers.")
+
 
     # Certifications and Awards
     st.header("Certifications and Awards")
     st.markdown("1. AWS Cloud Quest Data Analytics Certification")
     st.markdown("2. AWS Cloud Quest Solutions Architect Certification")
     st.markdown("3. Google Analytics Certification")
+    st.markdown("4. Microsoft Certified: Azure AI Engineer Associate")
+    st.markdown("5. Coursera: Deep Learning Specialization")
+    st.markdown("6. IBM Data Science Professional Certificate")
 
-    # Online Portfolio
-    st.header("Online Portfolio")
-    st.markdown("Visit my online portfolio to explore my projects and work in more detail: [Portfolio](https://yourportfolio.com)")
 
     # Code Samples
     st.header("Code Samples")
-    # You can provide code snippets or links to specific code examples on GitHub.
+    ("https://youtube-trends-joe.streamlit.app/")
 
     # Testimonials
     st.header("Testimonials")
-    # If available, you can add testimonials from colleagues or clients.
+
+    st.subheader("Alvin, Senior Network Adimn Liquid Telecom:")
+    st.write("Working with Mugare has been an absolute pleasure. His deep understanding of machine learning concepts coupled with their proficiency in coding has been instrumental in delivering successful projects. I highly recommend him for any data science role.")
+
+    st.subheader("Virender, Director London Distillers Kenya:")
+    st.write("Joseph is a highly skilled full-stack developer with a keen eye for detail. They have a knack for problem-solving and consistently deliver high-quality solutions. It's been a privilege to work alongside him.")
+
+    st.subheader("Anne Nderitu :")
+    st.write("I engaged Joseph for a web development project, and I was thoroughly impressed with their professionalism and expertise. He went above and beyond to ensure that the final product exceeded my expectations. I wouldn't hesitate to work with him again in the future.")
+
 
     # Awards and Honors
     st.header("Awards and Honors")
     st.markdown("1. Employee of the Month (June 2022)")
-    st.markdown("2. Best Web Developer Award (2021)")
     st.markdown("3. Outstanding Academic Achievement Award (2009)")
+    st.markdown("4. Innovation Award for Machine Learning Project (2023)")
+    st.markdown("5. Top Performer in Cloud Computing Hackathon (2020)")
+    st.markdown("6. Leadership Excellence Award for Project Management (2018)")
+
 
     # Professional Associations
     st.header("Professional Associations")
     st.markdown("1. Member of the Association of Fullstack Developers (AFD)")
     st.markdown("2. IEEE Computer Society Member")
+    st.markdown("3. ACM - Association for Computing Machinery Member")
+    st.markdown("4. Data Science Society Member")
+    st.markdown("5. Cloud Native Computing Foundation (CNCF) Member")
+    st.markdown("6. International Web Developers Association (IWDA) Member")
 
     # Volunteer Work
     st.header("Volunteer Work")
@@ -156,7 +181,7 @@ def main():
     st.header("Publications and Research")
     st.subheader("Research Paper: 'Machine Learning in Healthcare'")
     st.write("Published in the International Journal of Data Science and Healthcare.")
-    st.markdown("Link to [Research Paper](https://example.com/research-paper)")
+    
 
     # Languages and Technologies
     st.header("Languages and Technologies")
@@ -190,14 +215,16 @@ def main():
 
     # Skills Proficiency Bar Chart
     st.header("Skills Proficiency")
-    skills = ["Python", "JavaScript", "Data Analysis", "Machine Learning", "SQL"]
-    proficiency = [90, 80, 85, 75, 90]
+    skills = ["Python", "JavaScript", "Data Analysis", "Machine Learning", "SQL", "HTML/CSS", "React.js", "Node.js"]
+    proficiency = [90, 80, 85, 75, 90, 85, 80, 75]
 
-    # Create a bar chart using Matplotlib
+    # Plot the bar chart
     fig, ax = plt.subplots()
-    ax.bar(skills, proficiency, color='#2a3e72')
-    plt.xticks(rotation=45)
-    st.pyplot(fig, use_container_width=True)
+    ax.barh(skills, proficiency, color='skyblue')
+    ax.set_xlabel('Proficiency (%)')
+    ax.set_title('Skills Proficiency')
+    st.pyplot(fig)
+
 
     # Downloadable PDF
     st.header("Downloadable PDF")
